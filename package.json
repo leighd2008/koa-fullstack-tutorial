@@ -1,0 +1,26 @@
+{
+  "name": "koa-fullstack-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently — kill-others \"npm run backend\" \"npm run frontend\"",
+     "backend": "cd backend && npm run dev",
+     "frontend": "cd frontend && npm start",
+     "build": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leighd2008/koa-fullstack-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leighd2008/koa-fullstack-tutorial/issues"
+  },
+  "homepage": "https://github.com/leighd2008/koa-fullstack-tutorial#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
