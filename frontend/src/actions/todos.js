@@ -28,7 +28,7 @@ export function deleteTodo(id) {
   return { type: DELETE_TODO, id }
 }
 
-export function loadedTodo(todos) {
+export function loadedTodos(todos) {
   return { type: LOADED_TODOS, todos }
 }
 
