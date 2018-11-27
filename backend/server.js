@@ -34,8 +34,12 @@ require('./routes')(router)
 app.use(router.routes())
 app.use(router.allowedMethods())
 
+app.use(require('koa-static')('./build'))
+
+mongoose.connect(process.env.DATABASE)
+
 // … Koa code
-mongoose.connect
-{ useNewUrlParser: true }('mongodb://leighd2008:1Hgielenaid1@eg12345.mlab.com:12345/koa_fullstack_tut')
+// mongoose.connect
+// { useNewUrlParser: true }('mongodb://leighd2008:1Hgielenaid1@eg12345.mlab.com:12345/koa_fullstack_tut')
 
 module.exports = app
